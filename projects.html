@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<span class="top-section">
+    <a class="titleWrapLink" href="index.html">
+        <span class="titleWrap">
+        <span id="title" class="title">_</span>
+        </span>
+    </a>
+
+    <span class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </span>
+</span>
+    
+<span class="message">
+    <h1>Current Projects</h1>
+    <span class="header-line"></span>
+    <h2>Super Resolution Audio Stretching (SRAS)</h2>
+    <img src="images/spectogram.jpg" style="width:100%">
+    <p>
+        The ability to time stretch audio while maintaining pitch is an important tool for sound designers, musicians, and for any situation where the timing of sound elements must be synchronized to some arbitrary guideline. The most popular algorithms used today are hand-designed to interpolate the missing pieces of the lengthened audio. The results can sometimes sound metallic or unnatural, especially when the audio is stretched substantially.
+    </p>
+    <p>
+        I am investigating whether a convolutional neural network could be of use in this audio manipulation problem. <a href="https://arxiv.org/abs/1708.00853" style="color:black;">Audio super resolution</a> is a related task in which a higher sample rate is achieved through deep-learned manipulation of the low-resolution signal. I intend to apply the methods of audio super resolution to the task of time stretching primarily to produce higher quality time stretching, but also as a general audio experiment that may result in interesting transformations.
+    </p>
+    <p>
+        <a href="https://github.com/isamilefchik/super-resolution-audio-stretch" style="color:black;">GitHub Project</a>
+    </p>
+    
+    <h2>Pitch Mapped MIDI Delay</h2>
+    <img src="images/pitchmappedmididelay.jpg" style="width:100%">
+    <p>
+        This project is an expressive tool for creating MIDI files from audio sources such that the MIDI instrument operates as a delay effect on the audio. This is accomplished by performing a short-time Fourier transform (STFT) on the entire audio file, and translating the resulting frequency decomposition into MIDI notes. The MIDI notes are then fed through a delay loop, creating the desired effect.
+    </p>
+    <p>
+        There are numerous languages that would work best for this project, such as Max/MSP or even Python. For a real-time, VST plug-in implementation, C++ would largely be the only choice. However, I decided that I would use this project as an opportunity to dive into a language I'm not familiar with and want to learn. So I wrote it in Go and am experimenting with the language's abilities in concurrency.
+    </p>
+    <p>
+        <a href="https://github.com/isamilefchik/pitch-mapped-midi-delay" style="color:black;">GitHub Project</a>
+    </p>
+    
+    <h2>This Website</h2>
+    <img src="images/website.png" style="width:100%">
+    <p>
+        Responsive and well formatted on mobile devices!
+    </p>
+    <p>
+        <a href="https://github.com/isamilefchik/super-resolution-audio-stretch" style="color:black;">GitHub Project</a>
+    </p>
+</span>
+
+<script src="scripts/animateTitle.js"></script>
+</body>
+</html>
