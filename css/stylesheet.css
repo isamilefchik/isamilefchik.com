@@ -28,7 +28,6 @@ body {
 .top-section {
     display: block;
     height: 4.5em;
-    border-top: solid .1em;
     border-top-color: black;
     border-bottom: solid .1em;
     border-bottom-color: black;
