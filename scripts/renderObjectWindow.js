@@ -34,12 +34,12 @@ function onWindowResize(){
 
 controls = new THREE.OrbitControls( camera, renderer.domElement );
 
-var keyLight = new THREE.DirectionalLight(new THREE.Color('hsl(0, 0%, 100%)'), 1.0);
+var keyLight = new THREE.DirectionalLight(new THREE.Color('hsl(291, 100%, 73%)'), 1.0);
 keyLight.position.set(-100, 0, 100);
 
 var fillLight = new THREE.DirectionalLight(new THREE.Color('hsl(0, 0%, 100%)'), 0.75);
 
-var backLight = new THREE.DirectionalLight(0xffffff, 1.0);
+var backLight = new THREE.DirectionalLight(0xf4eeff, 1.0);
 backLight.position.set(100, 0, -100).normalize();
 
 scene.add(keyLight);
@@ -55,9 +55,9 @@ var callbackOnLoad = function ( event ) {
 
 loader.load( 'assets/surface.obj', callbackOnLoad, null, null, null, false );
 
-camera.position.set(14.649166036555204, 1.191537935682266, 51.377783681043155);
-camera.rotation.set(-3.120522213880699, 0.44892174296909637, 3.132447102906221);
-controls.target.set(-12.594553777629457, 1.6845315092829309e-16, 107.91963158843991);
+camera.position.set(-2.2653724671310833, 1.5288247187692872, 96.50740788551522);
+camera.rotation.set(-3.10779418321781, 0.07996546329372214, 3.138891800788255);
+controls.target.set(-5.890913919970629, 1.161752261149397e-16, 141.72373020624818);
 controls.update();
 
 function animate() {
