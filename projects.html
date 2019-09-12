@@ -9,6 +9,8 @@
 </head>
 <body>
 
+<!---------- HEADER ----------->
+    
 <span class="top-section">
     <a class="titleWrapLink" href="index.html">
         <span class="titleWrap">
@@ -24,10 +26,51 @@
         </ul>
     </span>
 </span>
-    
+
+<!---------- BODY ----------->
+
 <span class="message">
+    
+    <!---------- Current Projects ----------->
+    
     <h1>Current Projects</h1>
     <span class="header-line"></span>
+    
+    <!---------- Shapee ----------->
+    <h2>Shapee (reborn)</h2>
+    <img src="images/shapee.jpg" style="width:100%">
+    <p>
+        While reading Paul Lansky's lecture "<a href="https://paul.mycpanel.princeton.edu/lansky_beingdigital.pdf" style="color: black">The Importance of Being Digital</a>," I was amazed by an example presented of an audio plugin named "Shapee" that could map the timbral qualities of one source audio onto the frequency components of another. Lansky demonstrated how the pitches of Brahms's lullaby, performed by an orchestra, could be shaped by the timbral components of a choir singing Perotin. The transformation resulted in a convincing approximation of Brahms's lullaby sung by a choir.
+    </p>
+    <p>
+        Though I could not find the actual Shapee application online, I did find Christopher Penrose's paper "<a href="https://pdfs.semanticscholar.org/d272/a11b7e86da4cb5dae278b6d0a2cd42ab5115.pdf" style="color:black">Frequency Shaping of Audio Signals</a>," which proposes the method that Shapee is based on. From this paper, I implemented my own Shapee application in Go. The transformation is much like a vocoder, using the STFT of the two audio files as well as a user-defined number of DFT filters to compute a mixture of the signals.
+    </p>
+    <p>
+        <em>Orchestra performing Brahms's lullaby:</em>
+    </p>
+    <audio controls>
+    <source src="assets/shapee/brahms.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <p>
+        <em>Choir performing Perotin:</em>
+    </p>
+    <audio controls>
+    <source src="assets/shapee/perotin.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <p>
+        <em>Shapee (reborn)'s reproduction of Lansky's example:</em>
+    </p>
+    <audio controls>
+    <source src="assets/shapee/lanskyresult.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <p>
+        <a href="https://github.com/isamilefchik/shapee" style="color:black;">GitHub Project</a>
+    </p>
+    
+    <!---------- Super Resolution Audio Stretch ----------->
     <h2>Super Resolution Audio Stretch (SRAS)</h2>
     <img src="images/spectogram.jpg" style="width:100%">
     <p>
@@ -40,6 +83,7 @@
         <a href="https://github.com/isamilefchik/super-resolution-audio-stretch" style="color:black;">GitHub Project</a>
     </p>
     
+    <!---------- Pitch Mapped MIDI Delay ----------->
     <h2>Pitch-Mapped MIDI Delay</h2>
     <img src="images/pitchmappedmididelay.jpg" style="width:100%">
     <p>
@@ -52,6 +96,7 @@
         <a href="https://github.com/isamilefchik/pmmd" style="color:black;">GitHub Project</a>
     </p>
     
+    <!---------- Website ----------->
     <h2>This Website</h2>
     <img src="images/website.png" style="width:100%">
     <p>
