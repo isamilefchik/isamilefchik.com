@@ -21,4 +21,4 @@ function typing() {
     }
 }
 
-typing();
+document.body.onload = typing;
