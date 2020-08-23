@@ -32,10 +32,30 @@
 
 <span class="message">
     
-    <!-- ============= Current Projects ============= -->
+    <!-- ============= Projects ============= -->
     
-    <h1>Current Projects</h1>
+    <h1>Projects</h1>
     <span class="header-line"></span>
+
+    <!-- ============= Generating Object Stamps ============= -->
+    <h2>Generating Object Stamps</h2>
+    <img src="images/generating-object-stamps.gif" style="width: 100%"></img>
+    <p>
+    Since the fall of 2019, I have been working in <a href="http://jamestompkin.com/" style="color: black">Prof. James Tompkin</a>'s lab attempting to improve upon the task of object generation within existing images. <a href="https://arxiv.org/abs/2001.02595" style="color:black">Previous work</a> on this project centered on the separation of mask and texture generation. This approach encouraged stronger shape inference as well as color harmonization of the generated objects within the target scene. My work on the project has mainly been focused on integrating additional guidance by the user on object shape. This includes experiments with conditioning the generative networks on pose information and depth maps, as well as training the network to produce a sum-of-gaussians representation as a prior for shape and texture generation.
+    </p>
+
+    <!-- ============= Stylizing Video by Example ============= -->
+    <h2>Stylizing Video by Example</h2>
+    <img src="images/stylizing-video-by-example.gif" style="width: 100%"></img>
+    <p>
+    For the final project of the course cs2240: Interactive Graphics, my group implemented <a href="https://dcgi.fel.cvut.cz/home/sykorad/ebsynth.html" style="color:black">"Stylizing Video by Example" by Jamriska et al</a>. The paper outlines a non-deep-learned approach to stylizing video frames based on style reference keyframes. This is achieved by computing a collection of guiding frames that are fed into the <a href="https://dcgi.fel.cvut.cz/home/sykorad/stylit" style="color:black">StyLit algorithm</a>. Included in these guides are style frames advected based on computed optical flow, edge-filtered video frames, and an advected "positional" guide. All together, this method of video stylization is relatively efficient and artistically flexible.
+    </p>
+    <p>
+    To extend the paper, we also implemented automatic style keyframe generation via neural style transfer. Based on the initial style keyframe, subsequent style keyframes are generated periodically throughout the video to guide output frames. This allows for mixing the ease of neural style transfer and the temporal stability of Jamriska et al.'s method.
+    </p>
+    <p>
+        <a href="https://github.com/ctrotz/stylizing-video" style="color:black;">GitHub Project</a>
+    </p>
     
     <!-- ============= Shapee ============= -->
     <h2>Shapee (reborn)</h2>
